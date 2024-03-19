@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 80px;
+            width: 100%;
+            background-color: white;
+        }
+        .header > ul{
+            float: right;
+            display: flex;
+            list-style-type: none;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+        .header > ul > li{
+            padding: 10px 20px;
+            margin: 0 20px;
+            background-color: rgb(78, 78, 78); 
+            color: antiquewhite;
+            border-radius: 5px;
+        }
+        .header > ul > li:hover{
+            background-color: black;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 400px;
+        }
+        aside{
+            width: 50%;
+            background-color: burlywood;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section{
+            width: 50%;
+            background-color: blueviolet;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer{
+            width: 100%;
+            height: 120px;
+            background-color: cadetblue;
+        }
+        table{
+            font-size: 20px;
+            text-align: center;
+            color: aliceblue;
+        }
+        tr{
+            margin: 50px;
+            
+        }
+        th, td{
+            padding: 20px 10px;
+            border: 2px solid blanchedalmond;
+        }
+        form{
+            padding: 20px;
+            background-color: azure;
+            font-size: 20px;
+            color: black;
+            border-radius: 10px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .social{
+            
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Arisrada</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Soniya</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Priya</td>
+                    <td>95</td>
+                </tr>
+            </table>
+        </aside>
+        <section>
+            <form action="">
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="Enter your name"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Enter your password"><br><br>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date"><br><br>
+                <div style="display: flex; flex-direction: column; justify-content: center; ">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <img src="./src/whatsapp.png" alt="">
+            <img src="./src/insta1.png" alt="">
+            <img src="./src/telegram.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
